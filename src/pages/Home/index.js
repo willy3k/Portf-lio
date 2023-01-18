@@ -1,7 +1,7 @@
 import React from 'react';
-
 import { Container } from '../../style/GlobalStyles';
 import { BoasVinda, Intro, Conteudo } from './styled';
+import perfil from '../../assets/imgs/perfil.jpeg';
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <h1>Olá, Sejá bem vindo</h1>
         <div className="colum">
           <p>Sejá bem vindo ao meu Portfólio!</p>
-          <p>Aqui Voçê conhecera um pouco sobre o meu trabalho.</p>
+          <p>Aqui Você conhecera um pouco sobre o meu trabalho.</p>
         </div>
       </BoasVinda>
       <Intro>
@@ -22,13 +22,16 @@ export default function Home() {
 
       <Conteudo>
         <div className="card">
-          <div className="img">0</div>
+          <div className="img">
+            <img className="img-perfil" src={perfil} alt="" />
+          </div>
           <div className="card-2">
             <h2>Meu perfil</h2>
             <p>Veja com seus Proprios olhos</p>
-            <button type="submit">
-              <a href="/About">VISUALIZAR PERFIL</a>
-            </button>
+            <a href="/About">
+              {' '}
+              <button type="submit">VISUALIZAR PERFIL</button>
+            </a>
           </div>
         </div>
 
@@ -39,9 +42,10 @@ export default function Home() {
             <p>do meu trabalhor, e de como eu fiz esse</p>
             <p>projeto, e o que eu usei nele.</p>
             <samp>Aproveite a leitura</samp>
-            <button type="submit">
-              <a href="/">ler</a>
-            </button>
+            <a href="/Explication">
+              {' '}
+              <button type="submit">Fazer leitura</button>
+            </a>
           </div>
         </div>
       </Conteudo>

@@ -48,8 +48,8 @@ body .Toastify .Toastify__toast-container .Toastify__toast--error {
 
 export const Container = styled.section`
   margin-top: 90px;
-  max-width: 1440px;
+  width: 100%;
+  /* max-width: 1440px; */
   background: black;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 `;

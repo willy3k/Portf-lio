@@ -57,7 +57,7 @@ export const Conteudo = styled.div`
     margin: 23px;
     width: 590px;
     height: 300px;
-    background-color: ${colors.primaryColor};
+    background-color: #141413;
     border-radius: 12px;
 
     display: flex;
@@ -67,22 +67,34 @@ export const Conteudo = styled.div`
   }
 
   .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 3rem;
     width: 130px;
     height: 130px;
     background-color: white;
     border-radius: 100%;
   }
+  .img-perfil {
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
 
   .card-2 {
     h2 {
       font-size: 40px;
+      text-shadow: black 0.2em 0.2em 0.3em;
     }
 
     p {
       margin: 10px;
       font-size: 20px;
       color: #45403c;
+    }
+    a {
+      color: white;
     }
     button {
       padding: 16px;
@@ -91,9 +103,6 @@ export const Conteudo = styled.div`
       transition: 1s;
       &:hover {
         background-color: ${colors.PrimaryButton};
-      }
-      a {
-        color: white;
       }
     }
   }
@@ -121,17 +130,18 @@ export const Conteudo = styled.div`
         color: #ffd000;
       }
     }
-
+    a {
+      color: white;
+    }
     button {
+      width: 100%;
       padding: 12px;
-      font-size: 17px;
+      font-size: 18px;
+      border-radius: 8px;
       margin: 15px 0 5px 0;
       transition: 1s;
       &:hover {
         background-color: ${colors.PrimaryButton};
-      }
-      a {
-        color: white;
       }
     }
   }
